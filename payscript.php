@@ -6,6 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
+<style>
+    body {
+        background-image:url('https://images.unsplash.com/photo-1502444330042-d1a1ddf9bb5b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1053&q=80');
+        height: 782px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    form{
+
+    }
+</style>
+
+
 <body>
     <?php
 
@@ -16,8 +32,8 @@
 <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 
 
-
-<form class="form" action="" method="POST" >
+<form class="form" action="" method="POST" style="margin-top: 359px;
+    margin-left: 657px;">
 <script
     src="https://checkout.razorpay.com/v1/checkout.js"
     data-key="<?php echo $apiKey; ?>" // Enter the Test API Key ID generated from Dashboard → Settings → API Keys
@@ -34,6 +50,7 @@
     data-theme.color="#F37254"
 ></script>
 <input type="hidden" custom="Hidden Element" name="hidden">
+<button onclick="window.location.href='checkout.php'">Go Back</button>
 </form>
 
 
